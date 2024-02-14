@@ -7,7 +7,9 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif
+    justify-content: space-between;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 .header, .header ul, .hero, .content, .container, .quote, .call-to-action, .footer {
@@ -33,6 +35,10 @@ body {
     justify-content: space-between;
     list-style: none;
     gap: 25px;
+}
+
+.header li{
+    width: auto;
 }
 
 .header a , .hero .subtext{
@@ -112,6 +118,7 @@ button {
     font-weight: 100;
     color: #1f2937;
     font-size: 36px;
+    margin-bottom: 60px;
 }
 
 .atrib {
@@ -125,9 +132,9 @@ button {
     background: #3882f6;
     color: #f9faf8;
     border-radius: 16px;
-    margin: 60px 120px;
+    margin: auto 120px;
     padding: 16px;
-    height: 150px;
+    min-height: 150px;
     justify-content: space-around;
     gap: 50px;
 }
@@ -146,7 +153,9 @@ button {
 .footer {
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: #1f2937;
     color: #F9FAF8;
-    height: 100px;
+    min-height: 100px;
+    margin-top: 60px;
 }
